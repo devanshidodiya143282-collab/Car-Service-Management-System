@@ -1,0 +1,17 @@
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{color:#172033;background:#f7fafc;line-height:1.6}
+nav{position:sticky;top:0;z-index:20;background:#08111fdd;backdrop-filter:blur(8px);padding:18px 7%;display:flex;justify-content:space-between;align-items:center;color:#fff}
+nav h2{color:#38bdf8}nav a{color:white;text-decoration:none;margin-left:20px;font-weight:600}nav a:hover{color:#38bdf8}
+.hero{min-height:620px;display:flex;align-items:center;padding:70px 8%;color:#fff;background:linear-gradient(90deg,#020617dd,#02061744),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero h1{font-size:58px;max-width:700px;animation:slide .8s}.hero p{font-size:19px;max-width:650px;margin:20px 0}
+.btn{display:inline-block;padding:13px 24px;border-radius:8px;background:#0ea5e9;color:white;text-decoration:none;font-weight:bold;transition:.3s}.btn:hover{background:#0284c7;transform:translateY(-3px)}
+section{padding:70px 8%}.title{text-align:center;margin-bottom:40px}.title h1{font-size:38px;color:#0f172a}.title p{color:#64748b}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.service,.car,.info{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 8px 25px #00000012;transition:.35s}.service:hover,.car:hover,.info:hover{transform:translateY(-9px);box-shadow:0 15px 30px #0002}
+.service img,.car img{width:100%;height:210px;object-fit:cover}.service div,.car div,.info{padding:22px}.service h3,.car h3{color:#0284c7;margin-bottom:7px}
+.price{font-size:22px;font-weight:bold;margin:12px 0;color:#0f172a}
+.form{max-width:850px;margin:auto;background:#fff;padding:35px;border-radius:15px;box-shadow:0 8px 25px #00000012}.form label{display:block;font-weight:bold;margin:12px 0 5px}.form input,.form select,.form textarea{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:7px}
+.about{background:linear-gradient(90deg,#e0f2fe,#f8fafc)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+footer{background:#08111f;color:#cbd5e1;text-align:center;padding:28px}
+@keyframes slide{from{transform:translateX(-40px);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:800px){.grid,.contact-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:42px}}@media(max-width:600px){nav{flex-direction:column;gap:10px}.grid,.contact-grid{grid-template-columns:1fr}.hero{min-height:520px}.hero h1{font-size:36px}}
